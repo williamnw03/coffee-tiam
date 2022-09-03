@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav.button-toggle {
+    display: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Navigation Bar / MENU */
+nav.nav {
+    background-color: #3A1D09;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 80px;
+}
+
+nav.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+nav.nav ul li a{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    padding: 0px 60px;
+    transition: background-color 0.3s;
+    height: 100%;
+    line-height: 80px;
+}
+
+nav.nav ul li a:hover{
+    background-color: #C27832;
+    text-decoration: underline;
+}
+
+/* Banner */
+section.banner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+section.banner img.img-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.banner img.img-logo{
+    position: absolute;
+    width: 350px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Content */
+
+/* Main */
+
+/* History */
+main.content {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.content div.main-content {
+    width: 70%;
+    padding: 0 10px;
+}
+
+main.content div.main-content > h1{
+    font-size: 4rem;
+    margin-top: 100px;
+    color: #3A1D09;
+}
+
+main.content div.main-content #history{
+    margin-top: 0px;
+}
+
+main.content div.main-content > p{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+
+/* Bio */
+main.content div.main-content div.info-bio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+main.content div.main-content div.info-bio div.chef{
+    width: 30%;
+    padding: 0 10px;
+}
+
+main.content div.main-content div.info-bio div.chef img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main.content div.main-content div.info-bio div.description{
+    width: 70%;
+    padding: 0 10px;
+}
+
+main.content div.main-content div.info-bio div.description table tr td.titikdua{
+    padding: 15px 10px;
+}
+
+main.content div.main-content div.info-bio div.description tr td{
+    padding-top: 15px;
+    line-height: 1.7;
+}
+
+main.content div.main-content div.info-bio div.description table tr td.deskripsi{
+    text-align: justify;
+}
+
+main.content div.main-content div.info-bio div.description table tr td.info{
+    font-weight: bold;
+}
+
+main.content div.main-content div.info-bio div.description table tr td{
+    vertical-align: top;
+}
+
+main.content div.main-content div.info-bio div.description table tr{
+    font-size: 1.2rem;
+}
+
+/* Restaurants */
+ol.restaurants-list {
+    list-style-position: inside;
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #3A1D09;
+    font-weight: bold;
+}
+
+ol.restaurants-list img{
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+ol.restaurants-list li{
+    margin-top: 30px;
+}
+
+/* Menu */
+nav.menu {
+    width: 30%;
+    padding: 0 10px;
+    user-select: none;
+}
+
+nav.menu ul{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 0 auto;
+    background-color: #3A1D09;
+
+    position: sticky;
+    top: 130px;
+
+    border-radius: 10px;
+
+}
+
+nav.menu ul li a{
+    display: block;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+nav.menu ul li a:hover{
+    background-color: #C27832 !important;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #3A1D09;
+    padding: 0 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 250px;
+    margin-top: 200px;
+}
+
+/* Logo */
+footer.footer div.logo-footer{
+    line-height: 0;
+    width: 15%;
+}
+
+footer.footer div.logo-footer img{
+    width: 100%;
+}
+
+/* Contact */
+footer.footer div.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer div.contact > *{
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer.footer div.contact table tr td{
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+ @media all and (max-width: 1200px) {
+     /* Navigation Bar / MENU */
+    nav.nav ul {
+        flex-wrap: wrap;
+    }
+
+    /* Content */
+
+    /* Main */
+    main.content {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+
+    main.content div.main-content {
+        width: 100%;
+    }
+
+    /* Menu */
+    nav.menu {
+        display: none;
+    }
+
+    /* Footer */
+    footer.footer {
+        padding: 0 50px;
+        justify-content: center;
+        height: auto;
+    }
+
+    /* Logo */
+    footer.footer div.logo-footer{
+        display: none;
+    }
+
+    /* Contact */
+    footer.footer div.contact table tbody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer.footer div.contact > *{
+        color: white;
+        font-size: 1rem;
+    }
+
+    footer.footer div.contact table tr td{
+        padding: 10px;
+    }
+
+}
+
+@media all and (max-width: 820px) {
+    /* Bio */
+    main.content div.main-content div.info-bio{
+        display: block;
+    }
+
+    main.content div.main-content div.info-bio div.chef{
+        width: 50%;
+    }
+
+    main.content div.main-content div.info-bio div.description{
+        width: 100%;
+    }
+
+    /* Contact */
+    footer.footer div.contact table tbody{
+        flex-direction: column;
+    }
+
+    footer.footer div.contact > *{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media all and (max-width: 615px) {
+
+    :root {
+        --heightNavbar: 432px;
+        --navToggle: 80px
+    }
+
+    /* button-toggle */
+    nav.button-toggle {
+        display: flex;
+        align-items: center;
+        background-color: #3A1D09;
+        padding-left: 20px;
+        height: 80px;
+
+        position: relative;
+        z-index: 3;
+    }
+
+    nav.button-toggle span{
+        color: white;
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+    /* Navigation Bar / MENU */
+
+    nav.nav {
+        position: absolute;
+        top: calc(-1 * var(--heightNavbar));
+        z-index: 2;
+        transition: all 0.3s;
+        width: 100%;
+        height: 200px;
+    }
+
+    nav.buka {
+        top: var(--navToggle);
+    }
+
+    nav.nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav.nav ul li {
+        flex-basis: 100%;
+    }
+
+    nav.nav ul li a{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+        padding: 0 40px;
+        transition: background-color 0.3s;
+        line-height: 100px; 
+    }
+
+    nav.nav ul li a:hover{
+        background-color: #C27832;
+        text-decoration: underline;
+    }
+
+    /* Bio */
+    main.content div.main-content div.info-bio div.chef{
+        width: 100%;
+    }
+    
+    /* Footer */
+    footer.footer {
+        padding: 0 50px;
+        justify-content: center;
+    }
+
+    /* Logo */
+    footer.footer div.logo-footer{
+        display: none;
+    }
+
+    /* Contact */
+    footer.footer div.contact table tbody{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer.footer div.contact > *{
+        font-size: 1.2rem;
+    }
+
+    footer.footer div.contact table tr td{
+        padding: 10px;
+    }
+
+    /* title content */
+    main.content div.main-content > h1 {
+        font-size: 3rem;
+    }
+
+    /* Restaurants */
+    ol.restaurants-list {
+        list-style-position: inside;
+        font-size: 2rem;
+        margin-top: 40px;
+        color: #3A1D09;
+        font-weight: bold;
+    }
+
+    ol.restaurants-list img{
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    ol.restaurants-list li{
+        margin-top: 30px;
+    }
+
+    
+    main.content div.main-content div.info-bio table tbody tr td{
+        display: block;
+    }
+    
+    main.content div.main-content div.info-bio table tbody tr td:nth-child(2){
+        display: none;
+    }
+
+    main.content div.main-content div.info-bio table tbody tr td:nth-child(1){
+        font-size: 1.5rem;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+    /* title content */
+    main.content div.main-content > h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Banner */
+    section.banner img.img-logo{
+        position: absolute;
+        width: 200px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+}
+
+
+
+
+
+
